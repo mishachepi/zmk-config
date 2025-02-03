@@ -18,8 +18,11 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+# board: [ "nice_nano_v2" ]
+# shield: [ "corne_left", "corne_right" ]
 include:
   - board: nice_nano_v2
-    shield: corne_left # nice_view
+    shield: corne_left nice_view
   - board: nice_nano_v2
-    shield: corne_right # nice_view
+    shield: corne_right nice_view
+#    cmake-args: -DZMK_EXTRA_MODULES="zmk/modules/nice_view" 
